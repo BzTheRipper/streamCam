@@ -8,8 +8,11 @@
 </head>
 
 <body>
-
-    <video id="webcamVideo" autoplay></video>
+    <div id="head">
+        <h1>HI Streaming the camFeed</h1>
+    </div>
+    <div id = "CamFeedStreamer">
+        <video id="webcamVideo" autoplay></video>
 
     <script>
         const webcamVideo = document.getElementById("webcamVideo");
@@ -21,6 +24,8 @@
             console.error(error);
         })
     </script>
+    </div>
+    
 
 
 </body>
