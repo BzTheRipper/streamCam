@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliveryBuoi</title>
+</head>
+
+<body>
+
+    <video id="webcamVideo" autoplay></video>
+
+    <script>
+        const webcamVideo = document.getElementById("webcamVideo");
+
+        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
+            webcamVideo.srcObject = stream;
+
+        }).catch((error) => {
+            console.error(error);
+        })
+    </script>
+
+
+</body>
+
+</html>
