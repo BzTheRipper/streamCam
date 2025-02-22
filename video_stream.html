@@ -11,20 +11,10 @@
     <div id="head">
         <h1>HI Streaming the camFeed</h1>
     </div>
-    <div id = "CamFeedStreamer">
-        <video id="webcamVideo" autoplay></video>
 
-    <script>
-        const webcamVideo = document.getElementById("webcamVideo");
+    <video id="webcamVideo" autoplay></video>
 
-        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
-            webcamVideo.srcObject = stream;
-
-        }).catch((error) => {
-            console.error(error);
-        })
-    </script>
-    </div>
+    <script src="jsCamStream.js"></script>
     
 
 
